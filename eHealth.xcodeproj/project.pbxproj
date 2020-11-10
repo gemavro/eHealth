@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2019502255979BB00683F2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2019501255979BB00683F2D /* AppDelegate.swift */; };
+		F2019504255979BB00683F2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2019503255979BB00683F2D /* SceneDelegate.swift */; };
+		F2019506255979BB00683F2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2019505255979BB00683F2D /* ContentView.swift */; };
+		F2019508255979BB00683F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2019507255979BB00683F2D /* Assets.xcassets */; };
+		F201950B255979BB00683F2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F201950A255979BB00683F2D /* Preview Assets.xcassets */; };
+		F201950E255979BB00683F2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F201950C255979BB00683F2D /* LaunchScreen.storyboard */; };
+		F2019519255979BC00683F2D /* eHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2019518255979BC00683F2D /* eHealthTests.swift */; };
+		F2019524255979BC00683F2D /* eHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2019523255979BC00683F2D /* eHealthUITests.swift */; };
+		F201958B255AFD7E00683F2D /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201957F255AFD7E00683F2D /* PatientModel.swift */; };
+		F201958C255AFD7E00683F2D /* PatientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2019580255AFD7E00683F2D /* PatientViewModel.swift */; };
+		F201958F255AFD7E00683F2D /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2019584255AFD7E00683F2D /* PatientViewController.swift */; };
+		F2019590255AFD7E00683F2D /* PatientDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2019585255AFD7E00683F2D /* PatientDataSource.swift */; };
+		F2019591255AFD7E00683F2D /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2019587255AFD7E00683F2D /* PatientTableViewCell.swift */; };
+		F20195B5255AFEF500683F2D /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20195B4255AFEF500683F2D /* Style.swift */; };
+		F20195BD255B130200683F2D /* PatientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20195BC255B130200683F2D /* PatientAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2019515255979BC00683F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F20194F6255979BB00683F2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F20194FD255979BB00683F2D;
+			remoteInfo = eHealth;
+		};
+		F2019520255979BC00683F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F20194F6255979BB00683F2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F20194FD255979BB00683F2D;
+			remoteInfo = eHealth;
+		};
+		F2019571255AEC7100683F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE43B1A919546D880017679A;
+			remoteInfo = "SwiftSMART-iOS";
+		};
+		F2019573255AEC7100683F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE43B1B319546D880017679A;
+			remoteInfo = "SwiftSMART-iOSTests";
+		};
+		F2019575255AEC7100683F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECAA7831A5D3DE60062C64B;
+			remoteInfo = "SwiftSMART-macOS";
+		};
+		F2019577255AEC7100683F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE13AA921A5D44D100B901FD;
+			remoteInfo = "SwiftSMART-macOSTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F20194FE255979BB00683F2D /* eHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2019501255979BB00683F2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2019503255979BB00683F2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F2019505255979BB00683F2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F2019507255979BB00683F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F201950A255979BB00683F2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F201950D255979BB00683F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F201950F255979BB00683F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2019514255979BC00683F2D /* eHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2019518255979BC00683F2D /* eHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eHealthTests.swift; sourceTree = "<group>"; };
+		F201951A255979BC00683F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F201951F255979BC00683F2D /* eHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2019523255979BC00683F2D /* eHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eHealthUITests.swift; sourceTree = "<group>"; };
+		F2019525255979BC00683F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSMART.xcodeproj; path = "eHealth/Swift-SMART/SwiftSMART.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		F201957F255AFD7E00683F2D /* PatientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
+		F2019580255AFD7E00683F2D /* PatientViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientViewModel.swift; sourceTree = "<group>"; };
+		F2019584255AFD7E00683F2D /* PatientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
+		F2019585255AFD7E00683F2D /* PatientDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDataSource.swift; sourceTree = "<group>"; };
+		F2019587255AFD7E00683F2D /* PatientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		F20195B4255AFEF500683F2D /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		F20195BC255B130200683F2D /* PatientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F20194FB255979BB00683F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2019511255979BC00683F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F201951C255979BC00683F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F20194F5255979BB00683F2D = {
+			isa = PBXGroup;
+			children = (
+				F2019500255979BB00683F2D /* eHealth */,
+				F2019517255979BC00683F2D /* eHealthTests */,
+				F2019522255979BC00683F2D /* eHealthUITests */,
+				F20194FF255979BB00683F2D /* Products */,
+				F201954A255AEAA700683F2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F20194FF255979BB00683F2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F20194FE255979BB00683F2D /* eHealth.app */,
+				F2019514255979BC00683F2D /* eHealthTests.xctest */,
+				F201951F255979BC00683F2D /* eHealthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2019500255979BB00683F2D /* eHealth */ = {
+			isa = PBXGroup;
+			children = (
+				F2019501255979BB00683F2D /* AppDelegate.swift */,
+				F2019503255979BB00683F2D /* SceneDelegate.swift */,
+				F2019579255AED0F00683F2D /* Features */,
+				F20195B3255AFEF500683F2D /* Utilities */,
+				F201955A255AEC6800683F2D /* Dependencies */,
+				F2019505255979BB00683F2D /* ContentView.swift */,
+				F2019507255979BB00683F2D /* Assets.xcassets */,
+				F201950C255979BB00683F2D /* LaunchScreen.storyboard */,
+				F201950F255979BB00683F2D /* Info.plist */,
+				F2019509255979BB00683F2D /* Preview Content */,
+			);
+			path = eHealth;
+			sourceTree = "<group>";
+		};
+		F2019509255979BB00683F2D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F201950A255979BB00683F2D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2019517255979BC00683F2D /* eHealthTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2019518255979BC00683F2D /* eHealthTests.swift */,
+				F201951A255979BC00683F2D /* Info.plist */,
+			);
+			path = eHealthTests;
+			sourceTree = "<group>";
+		};
+		F2019522255979BC00683F2D /* eHealthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2019523255979BC00683F2D /* eHealthUITests.swift */,
+				F2019525255979BC00683F2D /* Info.plist */,
+			);
+			path = eHealthUITests;
+			sourceTree = "<group>";
+		};
+		F201954A255AEAA700683F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F201955A255AEC6800683F2D /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		F201956B255AEC7100683F2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2019572255AEC7100683F2D /* SMART.framework */,
+				F2019574255AEC7100683F2D /* SwiftSMART-iOSTests.xctest */,
+				F2019576255AEC7100683F2D /* SMART.framework */,
+				F2019578255AEC7100683F2D /* SwiftSMART-macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2019579255AED0F00683F2D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F20195BC255B130200683F2D /* PatientAPI.swift */,
+				F201957D255AFD7E00683F2D /* Patients */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F201957D255AFD7E00683F2D /* Patients */ = {
+			isa = PBXGroup;
+			children = (
+				F201957E255AFD7E00683F2D /* Models */,
+				F2019582255AFD7E00683F2D /* Controllers */,
+				F2019586255AFD7E00683F2D /* Views */,
+			);
+			path = Patients;
+			sourceTree = "<group>";
+		};
+		F201957E255AFD7E00683F2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F201957F255AFD7E00683F2D /* PatientModel.swift */,
+				F2019580255AFD7E00683F2D /* PatientViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2019582255AFD7E00683F2D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2019584255AFD7E00683F2D /* PatientViewController.swift */,
+				F2019585255AFD7E00683F2D /* PatientDataSource.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F2019586255AFD7E00683F2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2019587255AFD7E00683F2D /* PatientTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F20195B3255AFEF500683F2D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F20195B4255AFEF500683F2D /* Style.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F20194FD255979BB00683F2D /* eHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2019528255979BC00683F2D /* Build configuration list for PBXNativeTarget "eHealth" */;
+			buildPhases = (
+				F20194FA255979BB00683F2D /* Sources */,
+				F20194FB255979BB00683F2D /* Frameworks */,
+				F20194FC255979BB00683F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eHealth;
+			productName = eHealth;
+			productReference = F20194FE255979BB00683F2D /* eHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2019513255979BC00683F2D /* eHealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F201952B255979BC00683F2D /* Build configuration list for PBXNativeTarget "eHealthTests" */;
+			buildPhases = (
+				F2019510255979BC00683F2D /* Sources */,
+				F2019511255979BC00683F2D /* Frameworks */,
+				F2019512255979BC00683F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2019516255979BC00683F2D /* PBXTargetDependency */,
+			);
+			name = eHealthTests;
+			productName = eHealthTests;
+			productReference = F2019514255979BC00683F2D /* eHealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F201951E255979BC00683F2D /* eHealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F201952E255979BC00683F2D /* Build configuration list for PBXNativeTarget "eHealthUITests" */;
+			buildPhases = (
+				F201951B255979BC00683F2D /* Sources */,
+				F201951C255979BC00683F2D /* Frameworks */,
+				F201951D255979BC00683F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2019521255979BC00683F2D /* PBXTargetDependency */,
+			);
+			name = eHealthUITests;
+			productName = eHealthUITests;
+			productReference = F201951F255979BC00683F2D /* eHealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F20194F6255979BB00683F2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					F20194FD255979BB00683F2D = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					F2019513255979BC00683F2D = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = F20194FD255979BB00683F2D;
+					};
+					F201951E255979BC00683F2D = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = F20194FD255979BB00683F2D;
+					};
+				};
+			};
+			buildConfigurationList = F20194F9255979BB00683F2D /* Build configuration list for PBXProject "eHealth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F20194F5255979BB00683F2D;
+			productRefGroup = F20194FF255979BB00683F2D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F201956B255AEC7100683F2D /* Products */;
+					ProjectRef = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F20194FD255979BB00683F2D /* eHealth */,
+				F2019513255979BC00683F2D /* eHealthTests */,
+				F201951E255979BC00683F2D /* eHealthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F2019572255AEC7100683F2D /* SMART.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SMART.framework;
+			remoteRef = F2019571255AEC7100683F2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2019574255AEC7100683F2D /* SwiftSMART-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftSMART-iOSTests.xctest";
+			remoteRef = F2019573255AEC7100683F2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2019576255AEC7100683F2D /* SMART.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SMART.framework;
+			remoteRef = F2019575255AEC7100683F2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2019578255AEC7100683F2D /* SwiftSMART-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftSMART-macOSTests.xctest";
+			remoteRef = F2019577255AEC7100683F2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F20194FC255979BB00683F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F201950E255979BB00683F2D /* LaunchScreen.storyboard in Resources */,
+				F201950B255979BB00683F2D /* Preview Assets.xcassets in Resources */,
+				F2019508255979BB00683F2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2019512255979BC00683F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F201951D255979BC00683F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F20194FA255979BB00683F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2019502255979BB00683F2D /* AppDelegate.swift in Sources */,
+				F2019504255979BB00683F2D /* SceneDelegate.swift in Sources */,
+				F201958F255AFD7E00683F2D /* PatientViewController.swift in Sources */,
+				F2019506255979BB00683F2D /* ContentView.swift in Sources */,
+				F2019591255AFD7E00683F2D /* PatientTableViewCell.swift in Sources */,
+				F201958C255AFD7E00683F2D /* PatientViewModel.swift in Sources */,
+				F2019590255AFD7E00683F2D /* PatientDataSource.swift in Sources */,
+				F201958B255AFD7E00683F2D /* PatientModel.swift in Sources */,
+				F20195B5255AFEF500683F2D /* Style.swift in Sources */,
+				F20195BD255B130200683F2D /* PatientAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2019510255979BC00683F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2019519255979BC00683F2D /* eHealthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F201951B255979BC00683F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2019524255979BC00683F2D /* eHealthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2019516255979BC00683F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F20194FD255979BB00683F2D /* eHealth */;
+			targetProxy = F2019515255979BC00683F2D /* PBXContainerItemProxy */;
+		};
+		F2019521255979BC00683F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F20194FD255979BB00683F2D /* eHealth */;
+			targetProxy = F2019520255979BC00683F2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F201950C255979BB00683F2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F201950D255979BB00683F2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2019526255979BC00683F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2019527255979BC00683F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2019529255979BC00683F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"eHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = Y823V5NJJ2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = eHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eHealth.eHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F201952A255979BC00683F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"eHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = Y823V5NJJ2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = eHealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eHealth.eHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F201952C255979BC00683F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y823V5NJJ2;
+				INFOPLIST_FILE = eHealthTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eHealth.eHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHealth.app/eHealth";
+			};
+			name = Debug;
+		};
+		F201952D255979BC00683F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y823V5NJJ2;
+				INFOPLIST_FILE = eHealthTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eHealth.eHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHealth.app/eHealth";
+			};
+			name = Release;
+		};
+		F201952F255979BC00683F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y823V5NJJ2;
+				INFOPLIST_FILE = eHealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eHealth.eHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eHealth;
+			};
+			name = Debug;
+		};
+		F2019530255979BC00683F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y823V5NJJ2;
+				INFOPLIST_FILE = eHealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eHealth.eHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eHealth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F20194F9255979BB00683F2D /* Build configuration list for PBXProject "eHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2019526255979BC00683F2D /* Debug */,
+				F2019527255979BC00683F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2019528255979BC00683F2D /* Build configuration list for PBXNativeTarget "eHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2019529255979BC00683F2D /* Debug */,
+				F201952A255979BC00683F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F201952B255979BC00683F2D /* Build configuration list for PBXNativeTarget "eHealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F201952C255979BC00683F2D /* Debug */,
+				F201952D255979BC00683F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F201952E255979BC00683F2D /* Build configuration list for PBXNativeTarget "eHealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F201952F255979BC00683F2D /* Debug */,
+				F2019530255979BC00683F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F20194F6255979BB00683F2D /* Project object */;
+}
