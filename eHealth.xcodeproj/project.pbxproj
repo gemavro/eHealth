@@ -39,30 +39,30 @@
 			remoteGlobalIDString = F20194FD255979BB00683F2D;
 			remoteInfo = eHealth;
 		};
-		F2882E0C255B63DC00AD6790 /* PBXContainerItemProxy */ = {
+		F2882E2B255B64AA00AD6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F2882E05255B63DC00AD6790 /* SwiftSMART.xcodeproj */;
+			containerPortal = F2882E24255B64AA00AD6790 /* SwiftSMART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE43B1A919546D880017679A;
 			remoteInfo = "SwiftSMART-iOS";
 		};
-		F2882E0E255B63DC00AD6790 /* PBXContainerItemProxy */ = {
+		F2882E2D255B64AA00AD6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F2882E05255B63DC00AD6790 /* SwiftSMART.xcodeproj */;
+			containerPortal = F2882E24255B64AA00AD6790 /* SwiftSMART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE43B1B319546D880017679A;
 			remoteInfo = "SwiftSMART-iOSTests";
 		};
-		F2882E10255B63DC00AD6790 /* PBXContainerItemProxy */ = {
+		F2882E2F255B64AA00AD6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F2882E05255B63DC00AD6790 /* SwiftSMART.xcodeproj */;
+			containerPortal = F2882E24255B64AA00AD6790 /* SwiftSMART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EECAA7831A5D3DE60062C64B;
 			remoteInfo = "SwiftSMART-macOS";
 		};
-		F2882E12255B63DC00AD6790 /* PBXContainerItemProxy */ = {
+		F2882E31255B64AA00AD6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F2882E05255B63DC00AD6790 /* SwiftSMART.xcodeproj */;
+			containerPortal = F2882E24255B64AA00AD6790 /* SwiftSMART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE13AA921A5D44D100B901FD;
 			remoteInfo = "SwiftSMART-macOSTests";
@@ -91,7 +91,7 @@
 		F2019587255AFD7E00683F2D /* PatientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
 		F20195B4255AFEF500683F2D /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		F20195BC255B130200683F2D /* PatientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAPI.swift; sourceTree = "<group>"; };
-		F2882E05255B63DC00AD6790 /* SwiftSMART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSMART.xcodeproj; path = Dependencies/SwiftSMART.xcodeproj; sourceTree = "<group>"; };
+		F2882E24255B64AA00AD6790 /* SwiftSMART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSMART.xcodeproj; path = "Dependencies/Swift-SMART/SwiftSMART.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 			children = (
 				F2019501255979BB00683F2D /* AppDelegate.swift */,
 				F2019503255979BB00683F2D /* SceneDelegate.swift */,
-				F2882E05255B63DC00AD6790 /* SwiftSMART.xcodeproj */,
+				F2882E24255B64AA00AD6790 /* SwiftSMART.xcodeproj */,
 				F2019579255AED0F00683F2D /* Features */,
 				F20195B3255AFEF500683F2D /* Utilities */,
 				F2019505255979BB00683F2D /* ContentView.swift */,
@@ -243,13 +243,13 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		F2882E06255B63DC00AD6790 /* Products */ = {
+		F2882E25255B64AA00AD6790 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2882E0D255B63DC00AD6790 /* SMART.framework */,
-				F2882E0F255B63DC00AD6790 /* SwiftSMART-iOSTests.xctest */,
-				F2882E11255B63DC00AD6790 /* SMART.framework */,
-				F2882E13255B63DC00AD6790 /* SwiftSMART-macOSTests.xctest */,
+				F2882E2C255B64AA00AD6790 /* SMART.framework */,
+				F2882E2E255B64AA00AD6790 /* SwiftSMART-iOSTests.xctest */,
+				F2882E30255B64AA00AD6790 /* SMART.framework */,
+				F2882E32255B64AA00AD6790 /* SwiftSMART-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,8 +345,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F2882E06255B63DC00AD6790 /* Products */;
-					ProjectRef = F2882E05255B63DC00AD6790 /* SwiftSMART.xcodeproj */;
+					ProductGroup = F2882E25255B64AA00AD6790 /* Products */;
+					ProjectRef = F2882E24255B64AA00AD6790 /* SwiftSMART.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -359,32 +359,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F2882E0D255B63DC00AD6790 /* SMART.framework */ = {
+		F2882E2C255B64AA00AD6790 /* SMART.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SMART.framework;
-			remoteRef = F2882E0C255B63DC00AD6790 /* PBXContainerItemProxy */;
+			remoteRef = F2882E2B255B64AA00AD6790 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F2882E0F255B63DC00AD6790 /* SwiftSMART-iOSTests.xctest */ = {
+		F2882E2E255B64AA00AD6790 /* SwiftSMART-iOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SwiftSMART-iOSTests.xctest";
-			remoteRef = F2882E0E255B63DC00AD6790 /* PBXContainerItemProxy */;
+			remoteRef = F2882E2D255B64AA00AD6790 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F2882E11255B63DC00AD6790 /* SMART.framework */ = {
+		F2882E30255B64AA00AD6790 /* SMART.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SMART.framework;
-			remoteRef = F2882E10255B63DC00AD6790 /* PBXContainerItemProxy */;
+			remoteRef = F2882E2F255B64AA00AD6790 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F2882E13255B63DC00AD6790 /* SwiftSMART-macOSTests.xctest */ = {
+		F2882E32255B64AA00AD6790 /* SwiftSMART-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SwiftSMART-macOSTests.xctest";
-			remoteRef = F2882E12255B63DC00AD6790 /* PBXContainerItemProxy */;
+			remoteRef = F2882E31255B64AA00AD6790 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
