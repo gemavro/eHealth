@@ -39,30 +39,30 @@
 			remoteGlobalIDString = F20194FD255979BB00683F2D;
 			remoteInfo = eHealth;
 		};
-		F2019571255AEC7100683F2D /* PBXContainerItemProxy */ = {
+		F2882DF6255B624C00AD6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+			containerPortal = F2882DE8255B624C00AD6790 /* SwiftSMART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE43B1A919546D880017679A;
 			remoteInfo = "SwiftSMART-iOS";
 		};
-		F2019573255AEC7100683F2D /* PBXContainerItemProxy */ = {
+		F2882DF8255B624C00AD6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+			containerPortal = F2882DE8255B624C00AD6790 /* SwiftSMART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE43B1B319546D880017679A;
 			remoteInfo = "SwiftSMART-iOSTests";
 		};
-		F2019575255AEC7100683F2D /* PBXContainerItemProxy */ = {
+		F2882DFA255B624C00AD6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+			containerPortal = F2882DE8255B624C00AD6790 /* SwiftSMART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EECAA7831A5D3DE60062C64B;
 			remoteInfo = "SwiftSMART-macOS";
 		};
-		F2019577255AEC7100683F2D /* PBXContainerItemProxy */ = {
+		F2882DFC255B624C00AD6790 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+			containerPortal = F2882DE8255B624C00AD6790 /* SwiftSMART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE13AA921A5D44D100B901FD;
 			remoteInfo = "SwiftSMART-macOSTests";
@@ -84,7 +84,6 @@
 		F201951F255979BC00683F2D /* eHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2019523255979BC00683F2D /* eHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eHealthUITests.swift; sourceTree = "<group>"; };
 		F2019525255979BC00683F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSMART.xcodeproj; path = "eHealth/Swift-SMART/SwiftSMART.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		F201957F255AFD7E00683F2D /* PatientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
 		F2019580255AFD7E00683F2D /* PatientViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientViewModel.swift; sourceTree = "<group>"; };
 		F2019584255AFD7E00683F2D /* PatientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		F2019587255AFD7E00683F2D /* PatientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
 		F20195B4255AFEF500683F2D /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		F20195BC255B130200683F2D /* PatientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAPI.swift; sourceTree = "<group>"; };
+		F2882DE8255B624C00AD6790 /* SwiftSMART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSMART.xcodeproj; path = "Dependencies/Swift-SMART/SwiftSMART.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +145,9 @@
 			children = (
 				F2019501255979BB00683F2D /* AppDelegate.swift */,
 				F2019503255979BB00683F2D /* SceneDelegate.swift */,
+				F2882DE8255B624C00AD6790 /* SwiftSMART.xcodeproj */,
 				F2019579255AED0F00683F2D /* Features */,
 				F20195B3255AFEF500683F2D /* Utilities */,
-				F201955A255AEC6800683F2D /* Dependencies */,
 				F2019505255979BB00683F2D /* ContentView.swift */,
 				F2019507255979BB00683F2D /* Assets.xcassets */,
 				F201950C255979BB00683F2D /* LaunchScreen.storyboard */,
@@ -188,25 +188,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F201955A255AEC6800683F2D /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		F201956B255AEC7100683F2D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F2019572255AEC7100683F2D /* SMART.framework */,
-				F2019574255AEC7100683F2D /* SwiftSMART-iOSTests.xctest */,
-				F2019576255AEC7100683F2D /* SMART.framework */,
-				F2019578255AEC7100683F2D /* SwiftSMART-macOSTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F2019579255AED0F00683F2D /* Features */ = {
@@ -260,6 +241,17 @@
 				F20195B4255AFEF500683F2D /* Style.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F2882DE9255B624C00AD6790 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2882DF7255B624C00AD6790 /* SMART.framework */,
+				F2882DF9255B624C00AD6790 /* SwiftSMART-iOSTests.xctest */,
+				F2882DFB255B624C00AD6790 /* SMART.framework */,
+				F2882DFD255B624C00AD6790 /* SwiftSMART-macOSTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,8 +345,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F201956B255AEC7100683F2D /* Products */;
-					ProjectRef = F201956A255AEC7100683F2D /* SwiftSMART.xcodeproj */;
+					ProductGroup = F2882DE9255B624C00AD6790 /* Products */;
+					ProjectRef = F2882DE8255B624C00AD6790 /* SwiftSMART.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -367,32 +359,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F2019572255AEC7100683F2D /* SMART.framework */ = {
+		F2882DF7255B624C00AD6790 /* SMART.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SMART.framework;
-			remoteRef = F2019571255AEC7100683F2D /* PBXContainerItemProxy */;
+			remoteRef = F2882DF6255B624C00AD6790 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F2019574255AEC7100683F2D /* SwiftSMART-iOSTests.xctest */ = {
+		F2882DF9255B624C00AD6790 /* SwiftSMART-iOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SwiftSMART-iOSTests.xctest";
-			remoteRef = F2019573255AEC7100683F2D /* PBXContainerItemProxy */;
+			remoteRef = F2882DF8255B624C00AD6790 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F2019576255AEC7100683F2D /* SMART.framework */ = {
+		F2882DFB255B624C00AD6790 /* SMART.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SMART.framework;
-			remoteRef = F2019575255AEC7100683F2D /* PBXContainerItemProxy */;
+			remoteRef = F2882DFA255B624C00AD6790 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F2019578255AEC7100683F2D /* SwiftSMART-macOSTests.xctest */ = {
+		F2882DFD255B624C00AD6790 /* SwiftSMART-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SwiftSMART-macOSTests.xctest";
-			remoteRef = F2019577255AEC7100683F2D /* PBXContainerItemProxy */;
+			remoteRef = F2882DFC255B624C00AD6790 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
